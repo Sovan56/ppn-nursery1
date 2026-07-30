@@ -42,7 +42,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     priceRange: "₹150 – ₹350",
     inStock: true,
     featured: true,
-    image: "https://images.unsplash.com/photo-1593482892290-f54927ae1bf6?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&q=80&w=800",
     careInstructions: {
       light: "Low to bright indirect light",
       water: "Water every 2–3 weeks (allow soil to dry)",
@@ -122,7 +122,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     priceRange: "₹200 – ₹450",
     inStock: true,
     featured: true,
-    image: "https://images.unsplash.com/photo-1593691509543-c55fb32e7355?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1620127682229-33388276e540?auto=format&fit=crop&q=80&w=800",
     careInstructions: {
       light: "Medium to low indirect light",
       water: "Keep soil consistently moist, not soggy",
@@ -186,7 +186,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     priceRange: "₹450 – ₹950",
     inStock: true,
     featured: false,
-    image: "https://images.unsplash.com/photo-1545241047-10d210a514d0?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&q=80&w=800",
     careInstructions: {
       light: "Bright filtered sunlight",
       water: "Water when top 2 inches dry out",

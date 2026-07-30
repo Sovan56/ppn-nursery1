@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { useNursery } from '../context/NurseryContext';
 import { ProductCategory } from '../types';
+import { ImageWithFallback } from '../components/ImageWithFallback';
 
 export const HomePage: React.FC = () => {
   const { 
@@ -134,7 +135,7 @@ export const HomePage: React.FC = () => {
           {/* Hero Banner Image */}
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-emerald-600/30 group">
-              <img
+              <ImageWithFallback
                 src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80&w=1200"
                 alt="Indoor plants at PPN Nursery Bengaluru"
                 referrerPolicy="no-referrer"
@@ -260,7 +261,7 @@ export const HomePage: React.FC = () => {
               >
                 <div>
                   <div className="relative h-48 overflow-hidden">
-                    <img
+                    <ImageWithFallback
                       src={card.img}
                       alt={card.title}
                       referrerPolicy="no-referrer"
@@ -325,7 +326,7 @@ export const HomePage: React.FC = () => {
             >
               <div>
                 <div className="relative h-52 overflow-hidden bg-gray-100">
-                  <img
+                  <ImageWithFallback
                     src={prod.image}
                     alt={prod.name}
                     referrerPolicy="no-referrer"

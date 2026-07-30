@@ -16,7 +16,7 @@ import {
   INITIAL_ENQUIRIES 
 } from '../data/initialData';
 
-const LOCAL_STORAGE_KEY = 'ppn_nursery_data_v2';
+const LOCAL_STORAGE_KEY = 'ppn_nursery_data_v3';
 const ADMIN_AUTH_KEY = 'ppn_nursery_admin_auth';
 
 interface NurseryContextType {

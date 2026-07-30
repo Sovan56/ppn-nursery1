@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, Send, Sprout, CheckCircle2 } from 'lucide-react';
 import { useNursery } from '../context/NurseryContext';
+import { ImageWithFallback } from './ImageWithFallback';
 
 export const EnquiryModal: React.FC = () => {
   const { enquiryModalProduct, setEnquiryModalProduct, addEnquiry } = useNursery();
@@ -86,7 +87,7 @@ export const EnquiryModal: React.FC = () => {
               
               {/* Product Badge */}
               <div className="p-3 bg-emerald-50 rounded-xl border border-emerald-200 flex items-center gap-3">
-                <img
+                <ImageWithFallback
                   src={enquiryModalProduct.image}
                   alt={enquiryModalProduct.name}
                   referrerPolicy="no-referrer"

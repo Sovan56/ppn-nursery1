@@ -14,6 +14,7 @@ import {
   ExternalLink
 } from 'lucide-react';
 import { useNursery } from '../context/NurseryContext';
+import { ImageWithFallback } from '../components/ImageWithFallback';
 
 export const AboutPage: React.FC = () => {
   const { businessInfo, gallery, setCurrentRoute } = useNursery();
@@ -72,7 +73,7 @@ export const AboutPage: React.FC = () => {
 
           <div className="lg:col-span-6 relative">
             <div className="rounded-2xl overflow-hidden shadow-md border-4 border-emerald-100">
-              <img
+              <ImageWithFallback
                 src="https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&q=80&w=1200"
                 alt="PPN Nursery plants garden center"
                 referrerPolicy="no-referrer"
@@ -225,7 +226,7 @@ export const AboutPage: React.FC = () => {
               onClick={() => setCurrentRoute('gallery')}
               className="group relative h-48 rounded-2xl overflow-hidden cursor-pointer shadow-xs border border-emerald-100"
             >
-              <img
+              <ImageWithFallback
                 src={item.imageUrl}
                 alt={item.title}
                 referrerPolicy="no-referrer"
