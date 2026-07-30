@@ -1,0 +1,6 @@
+{
+  "name": "PPN Nursery",
+  "description": "Demo website and admin panel for PPN Nursery, a top-rated garden center in Bengaluru featuring plant catalog, photo gallery, contact form, and real-time admin management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
