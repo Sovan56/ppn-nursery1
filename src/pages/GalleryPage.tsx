@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { useNursery } from '../context/NurseryContext';
 import { GalleryItem } from '../types';
+import { ImageWithFallback } from '../components/ImageWithFallback';
 
 export const GalleryPage: React.FC = () => {
   const { gallery } = useNursery();
@@ -91,7 +92,7 @@ export const GalleryPage: React.FC = () => {
               className="group relative bg-white rounded-2xl overflow-hidden border border-emerald-100 shadow-xs hover:shadow-xl transition-all duration-300 cursor-pointer"
             >
               <div className="relative h-64 overflow-hidden">
-                <img
+                <ImageWithFallback
                   src={item.imageUrl}
                   alt={item.title}
                   referrerPolicy="no-referrer"
@@ -153,7 +154,7 @@ export const GalleryPage: React.FC = () => {
           {/* Lightbox Card */}
           <div className="max-w-4xl w-full max-h-[90vh] bg-slate-900 text-white rounded-2xl overflow-hidden border border-emerald-800/60 shadow-2xl flex flex-col">
             <div className="relative flex-1 bg-black flex items-center justify-center overflow-hidden min-h-[300px]">
-              <img
+              <ImageWithFallback
                 src={activeItem.imageUrl}
                 alt={activeItem.title}
                 referrerPolicy="no-referrer"
