@@ -26,6 +26,7 @@ import {
 } from 'lucide-react';
 import { useNursery } from '../../context/NurseryContext';
 import { Product, ProductCategory, AdminTab, CustomerEnquiry } from '../../types';
+import { ImageWithFallback } from '../../components/ImageWithFallback';
 
 export const AdminDashboard: React.FC = () => {
   const { 
@@ -436,7 +437,7 @@ export const AdminDashboard: React.FC = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     {products.slice(0, 4).map((p) => (
                       <div key={p.id} className="p-3 bg-gray-50 rounded-xl border border-gray-200 flex items-center gap-3">
-                        <img
+                        <ImageWithFallback
                           src={p.image}
                           alt={p.name}
                           referrerPolicy="no-referrer"
@@ -514,7 +515,7 @@ export const AdminDashboard: React.FC = () => {
                         <tr key={prod.id} className="hover:bg-emerald-50/50 transition-colors">
                           <td className="p-3.5 pl-4">
                             <div className="flex items-center gap-3">
-                              <img
+                              <ImageWithFallback
                                 src={prod.image}
                                 alt={prod.name}
                                 referrerPolicy="no-referrer"
@@ -867,7 +868,7 @@ export const AdminDashboard: React.FC = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                   {gallery.map((item) => (
                     <div key={item.id} className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-xs relative group">
-                      <img
+                      <ImageWithFallback
                         src={item.imageUrl}
                         alt={item.title}
                         referrerPolicy="no-referrer"
@@ -1007,7 +1008,7 @@ export const AdminDashboard: React.FC = () => {
                 />
 
                 <div className="mt-2 flex items-center gap-3 bg-gray-50 p-2.5 rounded-xl border border-gray-200">
-                  <img
+                  <ImageWithFallback
                     src={prodImage}
                     alt="Preview"
                     referrerPolicy="no-referrer"

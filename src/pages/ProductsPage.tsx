@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { useNursery } from '../context/NurseryContext';
 import { ProductCategory, Product } from '../types';
+import { ImageWithFallback } from '../components/ImageWithFallback';
 
 export const ProductsPage: React.FC = () => {
   const { 
@@ -215,7 +216,7 @@ export const ProductsPage: React.FC = () => {
                 <div>
                   {/* Thumbnail Image */}
                   <div className="relative h-56 overflow-hidden bg-gray-100">
-                    <img
+                    <ImageWithFallback
                       src={product.image}
                       alt={product.name}
                       referrerPolicy="no-referrer"
@@ -312,7 +313,7 @@ export const ProductsPage: React.FC = () => {
 
             <div className="p-5 space-y-4 text-xs text-gray-700">
               <div className="flex items-center gap-3 bg-emerald-50 p-3 rounded-xl">
-                <img
+                <ImageWithFallback
                   src={selectedCareProduct.image}
                   alt={selectedCareProduct.name}
                   referrerPolicy="no-referrer"
